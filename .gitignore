@@ -13,6 +13,7 @@ build/
 # Database
 data/db.json
 data/*.bak-*
+data/db-backup-*.json
 data/backups/
 
 # Logs
@@ -32,9 +33,11 @@ test-results/
 playwright-report/
 playwright/.cache/
 
-# Backups
-backups/
+# Backups - sab .bak files
+*.bak
+*.bak*
 *.bak-*
+backups/
 server-mysql-part1.ts.bak*
 tests/ui.spec.ts.bak*
 playwright.config.ts.bak*
