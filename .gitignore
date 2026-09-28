@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Database
+data/db.json
+data/*.bak-*
+data/backups/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Testing
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Backups
+backups/
+*.bak-*
+server-mysql-part1.ts.bak*
+tests/ui.spec.ts.bak*
+playwright.config.ts.bak*
+
+# Temp
+*.tmp
+*.temp

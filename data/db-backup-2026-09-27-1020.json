@@ -1,0 +1,429 @@
+{
+  "users": [
+    {
+      "id": "admin-1",
+      "role": "ADMIN",
+      "name": "Admin",
+      "email": "admin@novaserve.app",
+      "mobile": "9999999999",
+      "password": "admin123",
+      "active": true,
+      "createdAt": "2026-09-26T10:31:49.542Z"
+    },
+    {
+      "id": "cust-1",
+      "role": "CUSTOMER",
+      "name": "Demo Customer",
+      "email": "customer@novaserve.app",
+      "mobile": "8888888888",
+      "password": "cust123",
+      "active": true,
+      "address": "",
+      "photo": "",
+      "createdAt": "2026-09-26T10:31:49.543Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-1",
+      "name": "Government Services",
+      "active": true
+    },
+    {
+      "id": "cat-2",
+      "name": "Printing",
+      "active": true
+    },
+    {
+      "id": "cat-3",
+      "name": "Documentation",
+      "active": true
+    },
+    {
+      "id": "cat-4",
+      "name": "Online Applications",
+      "active": true
+    },
+    {
+      "id": "cat-5",
+      "name": "Other Services",
+      "active": true
+    }
+  ],
+  "services": [
+    {
+      "id": "svc-1",
+      "name": "PAN Card Application",
+      "description": "Apply for a new PAN card. Processing time 3-5 working days.",
+      "categoryId": "cat-1",
+      "price": 20,
+      "icon": "CreditCard",
+      "active": true,
+      "requiresDocuments": true,
+      "documentHint": "Aadhaar / ID proof (PDF/JPG/PNG)",
+      "createdAt": "2026-09-26T10:31:49.543Z"
+    },
+    {
+      "id": "svc-2",
+      "name": "Aadhaar Print",
+      "description": "Color print of Aadhaar card on A4 paper.",
+      "categoryId": "cat-2",
+      "price": 10,
+      "icon": "Printer",
+      "active": true,
+      "requiresDocuments": false,
+      "createdAt": "2026-09-26T10:31:49.543Z"
+    },
+    {
+      "id": "svc-3",
+      "name": "Passport Photo Sheet",
+      "description": "8 passport-size photos printed.",
+      "categoryId": "cat-2",
+      "price": 40,
+      "icon": "Camera",
+      "active": true,
+      "requiresDocuments": false,
+      "createdAt": "2026-09-26T10:31:49.543Z"
+    },
+    {
+      "id": "svc-4",
+      "name": "Income Certificate",
+      "description": "Apply for income certificate. Requires ID and address proof.",
+      "categoryId": "cat-1",
+      "price": 50,
+      "icon": "FileText",
+      "active": true,
+      "requiresDocuments": true,
+      "documentHint": "ID proof + address proof",
+      "createdAt": "2026-09-26T10:31:49.543Z"
+    },
+    {
+      "id": "svc-5",
+      "name": "Form Filling (Govt)",
+      "description": "Assistance with filling any government online form.",
+      "categoryId": "cat-4",
+      "price": 30,
+      "icon": "FileEdit",
+      "active": true,
+      "requiresDocuments": false,
+      "createdAt": "2026-09-26T10:31:49.543Z"
+    },
+    {
+      "id": "svc-mui9rn4d9uzsk",
+      "name": "swcswcd",
+      "description": "nbj",
+      "categoryId": "cat-1",
+      "price": 5,
+      "icon": "FileText",
+      "color": "emerald",
+      "active": true,
+      "requiresDocuments": false,
+      "documentHint": "",
+      "createdAt": "2026-09-26T10:51:17.581Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "NS-20260927-0004",
+      "customerId": "cust-1",
+      "customerName": "Demo Customer",
+      "serviceId": "aadhaar-pvc",
+      "serviceName": "Aadhaar PVC Print",
+      "amount": 141,
+      "status": "COMPLETED",
+      "formData": {
+        "fileName": "EAadhaar_0000004006770920240105094518_24092026161251.pdf"
+      },
+      "adminNote": "",
+      "timeline": [
+        {
+          "status": "COMPLETED",
+          "at": "2026-09-27T03:46:32.715Z",
+          "note": "Auto-completed - PVC card generated"
+        }
+      ],
+      "createdAt": "2026-09-27T03:46:32.715Z",
+      "updatedAt": "2026-09-27T03:46:32.715Z"
+    },
+    {
+      "id": "NS-20260926-0003",
+      "customerId": "cust-1",
+      "customerName": "Demo Customer",
+      "serviceId": "pan-find",
+      "serviceName": "PAN Find",
+      "amount": 15,
+      "status": "COMPLETED",
+      "formData": {
+        "aadhaar": "671749989405"
+      },
+      "adminNote": "",
+      "timeline": [
+        {
+          "status": "PENDING",
+          "at": "2026-09-26T15:07:58.562Z",
+          "note": "PAN Find request created"
+        },
+        {
+          "status": "COMPLETED",
+          "at": "2026-09-27T03:50:54.012Z",
+          "note": "PAN: HJHGG6556HG"
+        }
+      ],
+      "createdAt": "2026-09-26T15:07:58.562Z",
+      "updatedAt": "2026-09-27T03:50:54.012Z"
+    },
+    {
+      "id": "NS-20260926-0002",
+      "customerId": "cust-1",
+      "customerName": "Demo Customer",
+      "serviceId": "aadhaar-pvc",
+      "serviceName": "Aadhaar PVC Print",
+      "amount": 141,
+      "status": "COMPLETED",
+      "formData": {
+        "fileName": "EAadhaar_0000004006770920240105094518_24092026161251.pdf"
+      },
+      "adminNote": "",
+      "timeline": [
+        {
+          "status": "COMPLETED",
+          "at": "2026-09-26T15:07:46.101Z",
+          "note": "Auto-completed - PVC card generated"
+        }
+      ],
+      "createdAt": "2026-09-26T15:07:46.101Z",
+      "updatedAt": "2026-09-26T15:07:46.101Z"
+    },
+    {
+      "id": "NS-20260926-0001",
+      "customerId": "cust-1",
+      "customerName": "Demo Customer",
+      "serviceId": "aadhaar-pvc",
+      "serviceName": "Aadhaar PVC Print",
+      "amount": 141,
+      "status": "COMPLETED",
+      "formData": {
+        "fileName": "EAadhaar_0000004006770920240105094518_24092026161251.pdf"
+      },
+      "adminNote": "",
+      "timeline": [
+        {
+          "status": "COMPLETED",
+          "at": "2026-09-26T15:07:35.793Z",
+          "note": "Auto-completed - PVC card generated"
+        }
+      ],
+      "createdAt": "2026-09-26T15:07:35.793Z",
+      "updatedAt": "2026-09-26T15:07:35.793Z"
+    }
+  ],
+  "orderDocuments": [],
+  "wallets": [
+    {
+      "userId": "cust-1",
+      "balance": 62,
+      "totalAdded": 500,
+      "totalSpent": 438
+    }
+  ],
+  "walletTransactions": [
+    {
+      "id": "tx-muja19jfl0zme",
+      "userId": "cust-1",
+      "type": "DEBIT",
+      "amount": 141,
+      "note": "Aadhaar PVC Print - NS-20260927-0004",
+      "balanceAfter": 62,
+      "createdAt": "2026-09-27T03:46:32.715Z"
+    },
+    {
+      "id": "tx-muiixqle53vdk",
+      "userId": "cust-1",
+      "type": "DEBIT",
+      "amount": 15,
+      "note": "PAN Find - Order NS-20260926-0003",
+      "balanceAfter": 203,
+      "createdAt": "2026-09-26T15:07:58.562Z"
+    },
+    {
+      "id": "tx-muiixgz92e053",
+      "userId": "cust-1",
+      "type": "DEBIT",
+      "amount": 141,
+      "note": "Aadhaar PVC Print - NS-20260926-0002",
+      "balanceAfter": 218,
+      "createdAt": "2026-09-26T15:07:46.101Z"
+    },
+    {
+      "id": "tx-muiix90x4qy1m",
+      "userId": "cust-1",
+      "type": "DEBIT",
+      "amount": 141,
+      "note": "Aadhaar PVC Print - NS-20260926-0001",
+      "balanceAfter": 359,
+      "createdAt": "2026-09-26T15:07:35.793Z"
+    },
+    {
+      "id": "tx-1",
+      "userId": "cust-1",
+      "type": "CREDIT",
+      "amount": 500,
+      "note": "Initial demo balance",
+      "balanceAfter": 500,
+      "createdAt": "2026-09-26T10:31:49.543Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "ntf-mujb9c7b213dv",
+      "userId": "admin-1",
+      "title": "New support request",
+      "message": "Demo Customer: FDDEWSG",
+      "read": true,
+      "createdAt": "2026-09-27T04:20:49.031Z"
+    },
+    {
+      "id": "ntf-muja6v5oe9iwz",
+      "userId": "cust-1",
+      "title": "PAN Find approved",
+      "message": "Your PAN: HJHGG6556HG ÃƒÂ¢Ã¢\"šÂ¬Ã¢â‚¬Â check PAN Find page.",
+      "read": false,
+      "createdAt": "2026-09-27T03:50:54.012Z"
+    },
+    {
+      "id": "ntf-muja19jfwdsb0",
+      "userId": "admin-1",
+      "title": "Aadhaar PVC order",
+      "message": "Demo Customer generated a PVC card.",
+      "read": true,
+      "createdAt": "2026-09-27T03:46:32.715Z"
+    },
+    {
+      "id": "ntf-muja19jfa8b9b",
+      "userId": "cust-1",
+      "title": "Aadhaar PVC created",
+      "message": "Your PVC card PDF is ready to download.",
+      "read": false,
+      "createdAt": "2026-09-27T03:46:32.715Z"
+    },
+    {
+      "id": "ntf-muiixqlfw98eg",
+      "userId": "admin-1",
+      "title": "PAN Find request",
+      "message": "Demo Customer submitted Aadhaar 9405",
+      "read": true,
+      "createdAt": "2026-09-26T15:07:58.563Z"
+    },
+    {
+      "id": "ntf-muiixqlextefp",
+      "userId": "cust-1",
+      "title": "PAN Find submitted",
+      "message": "Your request is pending admin approval.",
+      "read": false,
+      "createdAt": "2026-09-26T15:07:58.562Z"
+    },
+    {
+      "id": "ntf-muiixgz9fzilr",
+      "userId": "admin-1",
+      "title": "Aadhaar PVC order",
+      "message": "Demo Customer generated a PVC card.",
+      "read": true,
+      "createdAt": "2026-09-26T15:07:46.101Z"
+    },
+    {
+      "id": "ntf-muiixgz9oh9yz",
+      "userId": "cust-1",
+      "title": "Aadhaar PVC created",
+      "message": "Your PVC card PDF is ready to download.",
+      "read": false,
+      "createdAt": "2026-09-26T15:07:46.101Z"
+    },
+    {
+      "id": "ntf-muiix90xk8x3m",
+      "userId": "admin-1",
+      "title": "Aadhaar PVC order",
+      "message": "Demo Customer generated a PVC card.",
+      "read": true,
+      "createdAt": "2026-09-26T15:07:35.793Z"
+    },
+    {
+      "id": "ntf-muiix90xfscts",
+      "userId": "cust-1",
+      "title": "Aadhaar PVC created",
+      "message": "Your PVC card PDF is ready to download.",
+      "read": false,
+      "createdAt": "2026-09-26T15:07:35.793Z"
+    }
+  ],
+  "supportTickets": [
+    {
+      "id": "sup-mujb9c7a9uorh",
+      "userId": "cust-1",
+      "userName": "Demo Customer",
+      "subject": "FDDEWSG",
+      "message": "FEWF",
+      "orderId": "EGFRETG",
+      "status": "RESOLVED",
+      "createdAt": "2026-09-27T04:20:49.030Z"
+    }
+  ],
+  "topups": [],
+  "aadhaarPvc": [
+    {
+      "id": "apvc-muja19jf3firm",
+      "orderId": "NS-20260927-0004",
+      "userId": "cust-1",
+      "userName": "Demo Customer",
+      "userEmail": "customer@novaserve.app",
+      "fileName": "EAadhaar_0000004006770920240105094518_24092026161251.pdf",
+      "charge": 141,
+      "status": "COMPLETED",
+      "createdAt": "2026-09-27T03:46:32.715Z"
+    },
+    {
+      "id": "apvc-muiixgz9b040d",
+      "orderId": "NS-20260926-0002",
+      "userId": "cust-1",
+      "userName": "Demo Customer",
+      "userEmail": "customer@novaserve.app",
+      "fileName": "EAadhaar_0000004006770920240105094518_24092026161251.pdf",
+      "charge": 141,
+      "status": "COMPLETED",
+      "createdAt": "2026-09-26T15:07:46.101Z"
+    },
+    {
+      "id": "apvc-muiix90x9tmk3",
+      "orderId": "NS-20260926-0001",
+      "userId": "cust-1",
+      "userName": "Demo Customer",
+      "userEmail": "customer@novaserve.app",
+      "fileName": "EAadhaar_0000004006770920240105094518_24092026161251.pdf",
+      "charge": 141,
+      "status": "COMPLETED",
+      "createdAt": "2026-09-26T15:07:35.793Z"
+    }
+  ],
+  "panFinds": [
+    {
+      "id": "pan-muiixqle4jcj2",
+      "orderId": "NS-20260926-0003",
+      "userId": "cust-1",
+      "userName": "Demo Customer",
+      "aadhaar": "671749989405",
+      "pan": "HJHGG6556HG",
+      "nameOnPan": "FEESR",
+      "panStatus": "ACTIVE",
+      "charge": 15,
+      "status": "APPROVED",
+      "note": "",
+      "createdAt": "2026-09-26T15:07:58.562Z"
+    }
+  ],
+  "settings": {
+    "payeeName": "NovaServe",
+    "minTopup": 100,
+    "maxTopup": 50000,
+    "aadhaarPvcCharge": 50,
+    "panFindCharge": 15
+  }
+}
