@@ -9,6 +9,8 @@
     "dev:server": "tsx watch server.ts",
     "build": "vite build",
     "preview": "vite preview",
+    "start": "node dist-server/server.js",
+    "postinstall": "npm run build",
     "lint": "tsc --noEmit",
     "clean": "Remove-Item -Recurse -Force dist, data\\db.json -ErrorAction SilentlyContinue"
   },
