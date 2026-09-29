@@ -10,7 +10,6 @@
     "build": "vite build",
     "preview": "vite preview",
     "start": "tsx server.ts",
-    "postinstall": "npm run build",
     "lint": "tsc --noEmit",
     "clean": "Remove-Item -Recurse -Force dist, data\\db.json -ErrorAction SilentlyContinue"
   },
